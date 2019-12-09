@@ -67,8 +67,8 @@ BASIC PROTOCOL 2
                         values=c('#700353', '#dcddde', '#dcddde', '#700353'), 
                         na.value="white", name = "Survival")
 
-    ## Scale for 'fill' is already present. Adding another scale for 'fill',
-    ## which will replace the existing scale.
+    ## Scale for 'fill' is already present. Adding another scale for 'fill', which
+    ## will replace the existing scale.
 
 ![](figures/f2_4-gheatmap-dendrogram.png)
 
@@ -176,9 +176,11 @@ BASIC PROTOCOL 5
 
     p <- ggtree(tree ) + geom_tiplab()
 
-    data <- msa_data(fasfile, 160, 220, color = "Chemistry_AA")
+    data <- tidy_msa(fasfile, start = 160, end = 220)
     p2 <- p + 
-      geom_facet(geom = geom_msa, data = data,  panel = 'Multiple Sequence Alignment') + 
+      geom_facet(geom = geom_msa, data = data,  
+                panel = 'Multiple Sequence Alignment',
+                color = "Chemistry_AA") + 
       xlim_tree(3)
 
     pp <- facet_widths(p2, widths=c(.2, 1))
