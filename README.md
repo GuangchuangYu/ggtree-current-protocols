@@ -174,7 +174,7 @@ BASIC PROTOCOL 5
     library(ggtree)
     library(ggmsa)
 
-    p <- ggtree(tree ) + geom_tiplab()
+    p <- ggtree(tree, size=1) + geom_tiplab()
 
     data <- tidy_msa(fasfile, start = 160, end = 220)
     p2 <- p + 
