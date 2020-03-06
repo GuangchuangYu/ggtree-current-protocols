@@ -1,3 +1,16 @@
+# Using ggtree to Visualize Data on Tree-Like Structure
+
+If you use this work in published research, please cite:
+
+
+__G Yu__<sup>\*</sup>. Using ggtree to Visualize Data on Tree-Like Structure. __*Current Protocols in Bioinformatics*__, 2020, 69(1):e96, <https://doi.org/10.1002/cpbi.96>.
+
+
+----
+
+This repo contains source code and data to reproduce figures of the above paper.
+
+
 BASIC PROTOCOL 1
 ----------------
 
